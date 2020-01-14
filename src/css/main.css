@@ -1,0 +1,52 @@
+@import url("~react-leaflet-markercluster/dist/styles.min.css");
+@import url("~leaflet-gesture-handling/dist/leaflet-gesture-handling.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap&subset=latin-ext");
+
+body {
+  background-color: #f0f0f0;
+  font-family: "Raleway", sans-serif;
+}
+
+.table,
+.navbar-brand {
+  font-family: "Comfortaa", cursive;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 30px;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 80vh;
+}
+
+.decoration {
+  padding-bottom: 50px;
+  background: url("../assets/Decoration.svg") no-repeat center bottom;
+  margin-bottom: 20px;
+}
+
+.btn {
+  min-width: 100px;
+}
+
+@media (max-width: 1150px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .popup {
+    max-width: 300px;
+    text-align: center;
+  }
+}
